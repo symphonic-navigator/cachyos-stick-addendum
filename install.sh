@@ -10,7 +10,7 @@ if [[ $EUID -eq 0 ]]; then
 fi
 
 # --- installation of basic prerequisites ---
-sudo pacman -S --needed --noconfirm yay git github-cli sddm chezmoi
+sudo pacman -S --needed --noconfirm yay git github-cli neovim sddm chezmoi
 yay -S --needed --noconfirm chili-sddm-theme
 
 # --- sddm setup ---
