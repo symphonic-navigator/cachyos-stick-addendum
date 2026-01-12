@@ -35,6 +35,9 @@ fi
 chezmoi init "https://github.com/symphonic-navigator/chezmoi-repo-end4"
 
 # --- installation of end-4 ---
-git clone https://github.com/end-4/dots-hyprland.git $HOME/repos/dots-hyprland
+if [[ -d "$HOME/repos/dots-hyprland" ]]; then
+  rm -rf "$HOME/repos/dots-hyprland" || true
+fi
+git clone https://github.com/end-4/dots-hyprland.git "$HOME/repos/dots-hyprland"
 cd $HOME/repos/dots-hyprland
 bash -c "$HOME/repos/dots-hyprland/setup install"
