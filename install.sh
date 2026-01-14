@@ -41,7 +41,7 @@ sudo systemctl enable sddm
 
 # --- activate chili-sddm-theme ---
 echo "⚙️ configuring SDDM theme..."
-SDDM_CONF="/etc/sddm.conf"
+SDDM_CONF="/etc/sddm.conf.d/10-theme.conf"
 
 if ! grep -q "^Current=chili" "$SDDM_CONF" 2>/dev/null; then
   echo "⚙️ Activating Chili theme in SDDM..."
