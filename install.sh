@@ -1,5 +1,5 @@
 #! /bin/bash
-
+/
 # --- script setup ---
 set -euo pipefail
 
@@ -61,6 +61,7 @@ fi
 echo "🥐 chezmoi init..."
 if [[ ! -d "$HOME/.local/share/chezmoi" ]]; then
   chezmoi init "https://github.com/symphonic-navigator/chezmoi-repo-end4"
+  chezmoi git remote set-url "git@github.com:symphonic-navigator/cachyos-stick-addendum.git"
 fi
 
 # --- installation of end-4 ---
