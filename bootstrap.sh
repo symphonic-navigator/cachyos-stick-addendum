@@ -10,6 +10,8 @@
   rm -rf "$installer_dir" || true
   mkdir -p "$installer_dir"
   git clone https://github.com/symphonic-navigator/cachyos-stick-addendum.git "$installer_dir"
+  cd "$installer_dir"
+  git remote set-url origin git@github.com:symphonic-navigator/cachyos-stick-addendum.git
 
   # --- launch ---
   bash -c "$installer_dir/install.sh"
