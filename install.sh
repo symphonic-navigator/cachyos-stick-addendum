@@ -1,5 +1,5 @@
 #! /bin/bash
-/
+
 # --- script setup ---
 set -euo pipefail
 
