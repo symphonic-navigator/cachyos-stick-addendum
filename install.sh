@@ -16,7 +16,7 @@ mkdir -p "$HOME/repos"
 
 # --- installation of basic prerequisites ---
 echo "📦 installing base prerequisites..."
-sudo pacman -S --needed --noconfirm git github-cli neovim sddm chezmoi
+sudo pacman -S --needed --noconfirm git github-cli neovim sddm chezmoi inxi
 
 # yay: try pacman first (CachyOS may provide it); otherwise bootstrap
 if ! have yay; then
